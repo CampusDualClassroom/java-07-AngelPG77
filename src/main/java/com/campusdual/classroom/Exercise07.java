@@ -8,7 +8,7 @@ public class Exercise07 {
 
     public static void main(String[] args) {
 
-        positionInAList(3);
+        positionInAList(8);
         sumFirstNaturalNumbers(10);
         showFirstNaturalNumbers(10);
     }
@@ -32,13 +32,8 @@ public class Exercise07 {
         list.add(2);
         list.add(1);
 
-        int index = -1;
-        for (int i = 0; i < list.size(); i++) {
-            if (i == num){
-                index = i;
-                break;
-            }
-        }
+        int index = list.indexOf(num);
+
         if (index >= 0) {
             System.out.println(num + " se encuentra en la posición: " + index);
         } else {
